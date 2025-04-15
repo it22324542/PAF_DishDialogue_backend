@@ -17,7 +17,7 @@ public class CommentController {
     private CommentService commentService;
 
     @PostMapping
-    public Comment addComment(@RequestBody Comment comment) {
+    public Comment addComment(@RequestBody Comment comment) { //created comment
         return commentService.addComment(comment);
     }
 
