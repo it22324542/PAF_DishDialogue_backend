@@ -4,7 +4,7 @@ import com.sliit.FoodGram.model.Comment;
 
 import java.util.List;
 
-public interface CommentService {
+public interface CommentService {  // Interface defining the service layer for comment-related operations
     Comment addComment(Comment comment);
 
     List<Comment> getComments(String postId);
