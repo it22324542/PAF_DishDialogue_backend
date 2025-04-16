@@ -17,7 +17,7 @@ public class CommentController {
     private CommentService commentService; // Handles business logic for comment operations
 
 
-    @PostMapping
+    @PostMapping // Handles HTTP POST requests to "/api/comments"
     public Comment addComment(@RequestBody Comment comment) { //created comment
         return commentService.addComment(comment);
     }
