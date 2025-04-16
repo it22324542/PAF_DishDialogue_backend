@@ -16,6 +16,7 @@ public class Comment {
     private String postId;
     private String userId;
     private String username;
-    private String createdAt;
+    private String createdAt;   // Timestamp when the comment was created
+
 
 }
