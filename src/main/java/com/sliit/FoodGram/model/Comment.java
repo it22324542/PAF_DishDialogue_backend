@@ -14,7 +14,8 @@ public class Comment {
     private String id;
     private String content;
     private String postId;
-    private String userId;
+    private String userId;  // ID of the user who made the comment
+
     private String username;   // Username of the commenter
 
     private String createdAt;   // Timestamp when the comment was created
