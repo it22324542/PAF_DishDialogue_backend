@@ -13,7 +13,8 @@ public class Comment {
     @Id
     private String id;
     private String content;
-    private String postId;
+    private String postId;      // ID of the post this comment is related to
+
     private String userId;  // ID of the user who made the comment
 
     private String username;   // Username of the commenter
