@@ -10,8 +10,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "comments")
 public class Comment {
     // Getters and setters
-    @Id
-    private String id;
+    
+    @Id      // Unique identifier for each comment (MongoDB _id field)
+
+    private String id;   
+
     private String content;  // The content/text of the comment
 
     private String postId;      // ID of the post this comment is related to
