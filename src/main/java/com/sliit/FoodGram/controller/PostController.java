@@ -27,6 +27,8 @@ public class PostController {
     @Autowired
     private PostService postService;
 
+
+    // create post
     @PostMapping
     public Post createPost(@RequestBody Post post) {
         return postService.createPost(post);
