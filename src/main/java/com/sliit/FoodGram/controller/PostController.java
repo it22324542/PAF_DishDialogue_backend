@@ -33,22 +33,23 @@ public class PostController {
     public Post createPost(@RequestBody Post post) {
         return postService.createPost(post);
     }
-
+// Get all posts
     @GetMapping
     public List<Post> getPosts() {
         return postService.getPosts();
     }
-
+// Get a single post by ID
     @GetMapping("/{id}")
     public Post getPost(@PathVariable String id) {
         return postService.getPost(id).orElseThrow(() -> new RuntimeException("Post not found"));
     }
 
+// Update an existing post by ID
     @PutMapping("/{id}")
     public Post updatePost(@RequestBody Post post, @PathVariable String id) {
         return postService.updatePost(post);
     }
-
+// Delete a post by ID
     @DeleteMapping("/{id}")
     public void deletePost(@PathVariable String id) {
         postService.deletePost(id);
