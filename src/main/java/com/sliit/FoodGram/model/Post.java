@@ -28,6 +28,7 @@ public class Post {
     private List<String> ingredients;
     private List<String> steps;
     private List<String> tags;
-    
+    private String cookTime;
+    private String difficulty;
 
 }
