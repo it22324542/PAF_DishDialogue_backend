@@ -32,7 +32,7 @@ public class CommentController {
         return commentService.updateComment(comment);
     }
 
-    @DeleteMapping("/{id}")
+    @DeleteMapping("/{id}")   // Handles HTTP DELETE requests to "/api/comments/{id}"
     public void deleteComment(@PathVariable String id) { //delete comment
         commentService.deleteComment(id);
     }
