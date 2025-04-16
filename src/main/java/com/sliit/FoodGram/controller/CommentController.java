@@ -14,7 +14,8 @@ import java.util.List;
 public class CommentController {
 
     @Autowired
-    private CommentService commentService;
+    private CommentService commentService; // Handles business logic for comment operations
+
 
     @PostMapping
     public Comment addComment(@RequestBody Comment comment) { //created comment
