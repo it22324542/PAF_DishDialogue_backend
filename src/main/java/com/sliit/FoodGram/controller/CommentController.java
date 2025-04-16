@@ -27,7 +27,7 @@ public class CommentController {
         return commentService.getComments(postId);
     }
 
-    @PutMapping("/{id}")
+    @PutMapping("/{id}")  // Handles HTTP PUT requests to "/api/comments/{id}"
     public Comment updateComment(@RequestBody Comment comment, @PathVariable String id) { //update comment
         return commentService.updateComment(comment);
     }
