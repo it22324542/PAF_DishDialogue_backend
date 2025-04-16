@@ -22,7 +22,7 @@ public class CommentController {
         return commentService.addComment(comment);
     }
 
-    @GetMapping("/{postId}")
+    @GetMapping("/{postId}")  // Handles HTTP GET requests to "/api/comments/{postId}"
     public List<Comment> getComments(@PathVariable String postId) {
         return commentService.getComments(postId);
     }
