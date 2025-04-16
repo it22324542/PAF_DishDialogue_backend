@@ -12,7 +12,8 @@ public class Comment {
     // Getters and setters
     @Id
     private String id;
-    private String content;
+    private String content;  // The content/text of the comment
+
     private String postId;      // ID of the post this comment is related to
 
     private String userId;  // ID of the user who made the comment
