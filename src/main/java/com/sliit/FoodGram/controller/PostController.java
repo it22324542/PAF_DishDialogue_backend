@@ -50,8 +50,5 @@ public class PostController {
         return postService.updatePost(post);
     }
 // Delete a post by ID
-    @DeleteMapping("/{id}")
-    public void deletePost(@PathVariable String id) {
-        postService.deletePost(id);
-    }
+   
 }
